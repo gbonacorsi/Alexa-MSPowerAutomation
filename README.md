@@ -1,5 +1,5 @@
 # Alexa-MSPowerAutomation
-R&D Project to study the interface between Alexa and Microsoft Power Automation
+R&D Project to study the interface between Amazon Alexa VUI and Microsoft Power Automation
 
 Source:
 - https://github.com/alexa/skill-sample-python-first-skill/tree/master
