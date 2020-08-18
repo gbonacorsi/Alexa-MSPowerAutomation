@@ -1,0 +1,429 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "session": {
+            "type": "object",
+            "properties": {
+                "new": {
+                    "type": "boolean"
+                },
+                "sessionId": {
+                    "type": "string"
+                },
+                "application": {
+                    "type": "object",
+                    "properties": {
+                        "applicationId": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "attributes": {
+                    "type": "object",
+                    "properties": {
+                        "key": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "user": {
+                    "type": "object",
+                    "properties": {
+                        "userId": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "context": {
+            "type": "object",
+            "properties": {
+                "Viewports": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "shape": {
+                                "type": "string"
+                            },
+                            "dpi": {
+                                "type": "integer"
+                            },
+                            "presentationType": {
+                                "type": "string"
+                            },
+                            "canRotate": {
+                                "type": "boolean"
+                            },
+                            "configuration": {
+                                "type": "object",
+                                "properties": {
+                                    "current": {
+                                        "type": "object",
+                                        "properties": {
+                                            "video": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "codecs": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "size": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "pixelWidth": {
+                                                        "type": "integer"
+                                                    },
+                                                    "pixelHeight": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "id",
+                            "shape",
+                            "dpi",
+                            "presentationType",
+                            "canRotate",
+                            "configuration"
+                        ]
+                    }
+                },
+                "Viewport": {
+                    "type": "object",
+                    "properties": {
+                        "experiences": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "arcMinuteWidth": {
+                                        "type": "integer"
+                                    },
+                                    "arcMinuteHeight": {
+                                        "type": "integer"
+                                    },
+                                    "canRotate": {
+                                        "type": "boolean"
+                                    },
+                                    "canResize": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "required": [
+                                    "arcMinuteWidth",
+                                    "arcMinuteHeight",
+                                    "canRotate",
+                                    "canResize"
+                                ]
+                            }
+                        },
+                        "shape": {
+                            "type": "string"
+                        },
+                        "pixelWidth": {
+                            "type": "integer"
+                        },
+                        "pixelHeight": {
+                            "type": "integer"
+                        },
+                        "dpi": {
+                            "type": "integer"
+                        },
+                        "currentPixelWidth": {
+                            "type": "integer"
+                        },
+                        "currentPixelHeight": {
+                            "type": "integer"
+                        },
+                        "touch": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "video": {
+                            "type": "object",
+                            "properties": {
+                                "codecs": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "System": {
+                    "type": "object",
+                    "properties": {
+                        "application": {
+                            "type": "object",
+                            "properties": {
+                                "applicationId": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "user": {
+                            "type": "object",
+                            "properties": {
+                                "userId": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "device": {
+                            "type": "object",
+                            "properties": {
+                                "deviceId": {
+                                    "type": "string"
+                                },
+                                "supportedInterfaces": {
+                                    "type": "object",
+                                    "properties": {}
+                                }
+                            }
+                        },
+                        "apiEndpoint": {
+                            "type": "string"
+                        },
+                        "apiAccessToken": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "request": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "requestId": {
+                    "type": "string"
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "timestamp": {
+                    "type": "string"
+                },
+                "intent": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "confirmationStatus": {
+                            "type": "string"
+                        },
+                        "slots": {
+                            "type": "object",
+                            "properties": {
+                                "FirtName": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "resolutions": {
+                                            "type": "object",
+                                            "properties": {
+                                                "resolutionsPerAuthority": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "authority": {
+                                                                "type": "string"
+                                                            },
+                                                            "status": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "code": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "values": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "value": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                                "name": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "id": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "required": [
+                                                                        "value"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "authority",
+                                                            "status",
+                                                            "values"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "confirmationStatus": {
+                                            "type": "string"
+                                        },
+                                        "source": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "Month": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "confirmationStatus": {
+                                            "type": "string"
+                                        },
+                                        "source": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "LastName": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "resolutions": {
+                                            "type": "object",
+                                            "properties": {
+                                                "resolutionsPerAuthority": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "authority": {
+                                                                "type": "string"
+                                                            },
+                                                            "status": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "code": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "values": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "value": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                                "name": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "id": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "required": [
+                                                                        "value"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "authority",
+                                                            "status",
+                                                            "values"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "confirmationStatus": {
+                                            "type": "string"
+                                        },
+                                        "source": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "Day": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "confirmationStatus": {
+                                            "type": "string"
+                                        },
+                                        "source": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "dialogState": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
