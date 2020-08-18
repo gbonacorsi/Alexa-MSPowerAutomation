@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "sessionAttributes": {},
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": @{variables('Response')}
+    },
+    "shouldEndSession": false
+  }
+}
