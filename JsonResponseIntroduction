@@ -1,0 +1,13 @@
+{
+  "version": "string",
+  "sessionAttributes": {
+    "key": "value"
+  },
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "Hello into the BirthDay Skill. Can I have the birthday of your friend?"    
+    },
+    "shouldEndSession": false
+  }
+}
