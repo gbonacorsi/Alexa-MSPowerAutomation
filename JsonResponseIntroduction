@@ -6,7 +6,7 @@
   "response": {
     "outputSpeech": {
       "type": "PlainText",
-      "text": "Hello into the BirthDay Skill. Can I have the birthday of your friend?"    
+      "text": "Hello, and welcome into the BirthDay Skill. Can I have the birthday of your friend?"    
     },
     "shouldEndSession": false
   }
