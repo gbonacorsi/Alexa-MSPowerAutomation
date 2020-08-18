@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "sessionAttributes": {
+            "type": "object",
+            "properties": {}
+        },
+        "response": {
+            "type": "object",
+            "properties": {
+                "outputSpeech": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string"
+                        },
+                        "text": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "shouldEndSession": {
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}
